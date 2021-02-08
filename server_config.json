@@ -1,0 +1,23 @@
+{
+	"server": {
+		"ip": "127.0.0.1",
+		"port": 8080,
+		"root": "../www"
+	},
+	"modules": {
+		"SSL": {
+			"path": "module/ssl/libmodule_ssl.so",
+			"certificate": "../certificate/zia-cert.pem",
+			"certificate-key": "../certificate/zia-key.pem"
+		},
+		"PHP": {
+			"path": "module/php/libmodule_php.so"
+		},
+		"DeflateZipper": {
+			"path": "module/DeflateZipper/lib/libmodule_DeflateZipper.so"
+		},
+		"GZipper": {
+			"path": "module/GZipper/lib/libmodule_GZipper.so"
+		}
+	}
+}
